@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'cartstyle'`, () => {
+  it(`should have as title 'e-kart'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('cartstyle');
+    expect(app.title).toEqual('e-kart');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('cartstyle app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('e-kart app is running!');
   });
 });
